@@ -1,0 +1,128 @@
+/* Name - Student Number: XXXXXXX */
+html {
+    height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 7rem;
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#movie1, #movie2 {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+#moviepic {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 130px;
+}
+
+.actors {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.actor {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.actor-pic {
+    width: 120px; 
+    height: 150px; 
+    border-radius: 7px; 
+    margin-bottom: 10px; 
+}
+
+.divider {
+    border: 2px solid black;
+    margin-left: 0.9rem;
+}
+
+
+.red {
+    color: red;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.about {
+    text-align: center;
+    background-color: #FFFAF0;
+    border: 0;
+    border-radius: 40px;
+    margin: 5rem;
+}
+
+.greentext {
+    font-weight: bold;
+    color: #2E8B57;
+    font-style: italic;
+}
+
+#Photo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.mainp {
+    text-align: center;
+}
